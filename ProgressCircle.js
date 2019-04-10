@@ -33,7 +33,7 @@ class ProgresCircle {
         this.init = () => {
             this.reSize();
             this.ctx.lineWidth = this.size;
-            this.ctx.alpha = this.alpha;
+            this.ctx.globalAlpha = this.alpha;
             this.ctx.textAlign = "center";
             this.ctx.fillStyle = "white";
             this.ctx.font = this.font;
@@ -45,7 +45,7 @@ class ProgresCircle {
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
             this.ctx.beginPath();
-            this.ctx.strokeStyle = "white";
+            this.ctx.strokeStyle = this.colorMid;
             this.ctx.lineWidth = this.sizeMid;
             this.ctx.arc(this.x, this.y, this.border, 0, Math.PI * 2);
             this.ctx.stroke();
