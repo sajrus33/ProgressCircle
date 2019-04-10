@@ -50,3 +50,7 @@ myBrandNewCircle.init();
 
 //Just run() your circles whenever you want. :)
 myBrandNewCircle.run();
+```
+
+# Codepen example
+https://codepen.io/sajrus33/pen/vMxaje
