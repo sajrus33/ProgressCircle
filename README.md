@@ -14,7 +14,7 @@ const myBrandNewCircle = new ProgressCircle(canvas, duration, progress, size, si
 # Parameters
 * example
 ```
-//make your canvas.width = canvas.height; to get circle shape, and pass it as a first parameter, set(canvas element).
+//create canvas, make it canvas.width = canvas.height; to get circle shape, and pass it as a first parameter, set(canvas element).
 canvas = document.querySelector(".yourCanvas"),
 
 //duration in frames number, -> 60fps, set(0-max number).
