@@ -11,8 +11,9 @@
 ```
 const myBrandNewCircle = new ProgressCircle(canvas, duration, progress, size, sizeMid, color, colorMid, font, alpha);
 ```
-# Parameters
+### Parameters
 * example
+![N|Solid](https://i.postimg.cc/4ykWQ7Y9/progress-Bar.png)
 ```
 //create canvas, make it canvas.width = canvas.height; to get circle shape, and pass it as a first parameter, set(canvas element).
 canvas = document.querySelector(".yourCanvas"),
@@ -42,3 +43,10 @@ font = "Arial 20px bold",
 alpha = 1;
 
 ```
+### init() and run()
+```
+//after creating, use init() method for each circle object -> check console "Circle Progress Bar -> resized"
+myBrandNewCircle.init();
+
+//Just run() your circles whenever you want. :)
+myBrandNewCircle.run();
