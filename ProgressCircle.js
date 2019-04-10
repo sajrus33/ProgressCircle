@@ -1,6 +1,6 @@
 "use strict";
 class ProgresCircle {
-    constructor(canvas, duration, progress, size, color, colorMid, font, alpha) {
+    constructor(canvas, duration, progress, size, sizeMid, color, colorMid, font, alpha) {
         this.canvas = canvas;
         this.ctx = this.canvas.getContext("2d");
 
@@ -15,6 +15,8 @@ class ProgresCircle {
         this.colorMid = colorMid;
         this.font = font;
         this.alpha = alpha;
+        this.size2 = sizeMid;
+
 
         this.reSize = () => {
             console.log("Circle Progress Bar -> resized");
@@ -23,7 +25,7 @@ class ProgresCircle {
             this.x = this.canvas.width / 2;
             this.y = this.x;
             this.size = this.x * size;
-            this.sizeMid = this.size - this.size * .66;
+            this.sizeMid = this.size * this.size2;
             this.border = this.x - this.size;
         };
 
