@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .myCanvas {
+        width: 200px;
+        height: 200px;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas class="myCanvas"></canvas>
+    <script src="ProgressCircle.js"></script>
+    <script>
+      // Set your own parameters
+      const canvas = document.querySelector(".myCanvas"),
+        duration = 45,
+        progress = 0.9,
+        size = 0.12,
+        sizeMid = 0.3,
+        color = "cadetblue",
+        colorMid = "black",
+        font = "64px bold courier",
+        alpha = 0.5;
+      // Create new Circle
+      const myBrandNewCircle = new ProgressCircle(
+        canvas,
+        duration,
+        progress,
+        size,
+        sizeMid,
+        color,
+        colorMid,
+        font,
+        alpha
+      );
+
+      //   Circle init() and run()
+      myBrandNewCircle.init();
+      myBrandNewCircle.run();
+    </script>
+  </body>
+</html>
